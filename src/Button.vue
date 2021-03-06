@@ -6,6 +6,7 @@
       [`cute-cartoon-button-${size}`]: true,
       [`cute-cartoon-button-${type}`]: true
     }"
+    @click="$emit('click')"
   >
     <slot />
   </button>
