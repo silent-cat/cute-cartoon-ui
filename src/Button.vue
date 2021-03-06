@@ -1,5 +1,9 @@
 <template>
-  <button class="cute-cartoon-button" :size="size" :circle="circle">
+  <button
+    class="cute-cartoon-button"
+    :circle="circle"
+    :class="{ [`cute-cartoon-button-${size}`]: true }"
+  >
     <slot />
   </button>
 </template>
@@ -8,13 +12,14 @@ export default {
   props: {
     size: {
       type: String,
-      default: 'medium',
+      default: 'medium'
     },
     circle: {
       type: Boolean,
-      default: false,
+      default: false
     },
-  },
+    computed: {}
+  }
 }
 </script>
 <style lang="scss">
@@ -60,41 +65,39 @@ $border-radius: 4px;
   &:focus {
     outline: none;
   }
-  //小型按钮
-  &[size='small'] {
-    padding: 0 0.8em;
-    height: $small-height;
-    font-size: $font-size * 0.8;
-    border-width:$border-width*0.8;
-    &:active {
-      background-color: #faaf8d;
-      box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15) inset,
-        1px 1px 2px rgba(0, 0, 0, 0.3);
-    }
-    &[circle] {
-      width: $small-height * 1.2;
-      height: $small-height * 1.2;
-      border-radius: $small-height * 1.2/2;
-      padding: 0;
-    }
+}
+.cute-cartoon-button-small {
+  padding: 0 0.8em;
+  height: $small-height;
+  font-size: $font-size * 0.8;
+  border-width: $border-width * 0.8;
+  &:active {
+    background-color: #faaf8d;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15) inset,
+      1px 1px 2px rgba(0, 0, 0, 0.3);
   }
-  //大型按钮
-  &[size='large'] {
-    padding: 0 1.2em;
-    height: $large-height;
-    font-size: $font-size * 1.2;
-    border-width:$border-width*1.2;
-    &:active {
-      background-color: #faaf8d;
-      box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.15) inset,
-        1px 1px 4px rgba(0, 0, 0, 0.3);
-    }
-    &[circle] {
-      width: $large-height * 1.2;
-      height: $large-height * 1.2;
-      border-radius: $large-height * 1.2/2;
-      padding: 0;
-    }
+  &[circle] {
+    width: $small-height * 1.2;
+    height: $small-height * 1.2;
+    border-radius: $small-height * 1.2/2;
+    padding: 0;
+  }
+}
+.cute-cartoon-button-large {
+  padding: 0 1.2em;
+  height: $large-height;
+  font-size: $font-size * 1.2;
+  border-width: $border-width * 1.2;
+  &:active {
+    background-color: #faaf8d;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.15) inset,
+      1px 1px 4px rgba(0, 0, 0, 0.3);
+  }
+  &[circle] {
+    width: $large-height * 1.2;
+    height: $large-height * 1.2;
+    border-radius: $large-height * 1.2/2;
+    padding: 0;
   }
 }
 </style>
