@@ -1,10 +1,10 @@
 <template>
   <button
-    class="cute-cartoon-button"
+    class="cc-button"
     :circle="circle"
     :class="{
-      [`cute-cartoon-button-${size}`]: true,
-      [`cute-cartoon-button-${type}`]: true
+      [`cc-button-${size}`]: true,
+      [`cc-button-${type}`]: true
     }"
     @click="$emit('click')"
   >
@@ -41,7 +41,7 @@ $border-style: solid;
 $border-color: #fff;
 $border-width: 2px;
 $border-radius: 4px;
-.cute-cartoon-button {
+.cc-button {
   font-size: $font-size;
   vertical-align: middle;
   height: $height;
@@ -53,7 +53,7 @@ $border-radius: 4px;
   border-color: $border-color;
   border-width: $border-width;
   border-radius: $border-radius;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
   &[disabled] {
     cursor: not-allowed;
     background-color: $forbidden-bg;

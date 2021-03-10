@@ -7,17 +7,14 @@
   "license": "MIT",
   "scripts": {
     "start": "parcel index.html --no-cache",
-    "test": "parcel build test/* --no-minify && karma start --single-run"
+    "test": "parcel build test/* --no-minify && karma start --single-run",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
-  "dependencies": {
-    "chai": "^4.3.3",
-    "node-sass": "^5.0.0",
-    "sass": "^1.32.8",
-    "vue": "^2.6.12",
-    "vue-hot-reload-api": "^2.3.4"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@vue/component-compiler-utils": "^3.2.0",
+    "chai": "^4.3.3",
     "karma": "^6.1.1",
     "karma-chai": "^0.1.0",
     "karma-chai-spies": "^0.1.4",
@@ -25,10 +22,15 @@
     "karma-mocha": "^2.0.1",
     "karma-sinon-chai": "^2.0.2",
     "mocha": "^8.3.0",
+    "node-sass": "^5.0.0",
     "parcel-bundler": "1.12.3",
+    "sass": "^1.32.8",
     "sinon": "^9.2.4",
     "sinon-chai": "^3.5.0",
-    "vue-template-compiler": "^2.6.12"
+    "vue": "^2.6.12",
+    "vue-hot-reload-api": "^2.3.4",
+    "vue-template-compiler": "^2.6.12",
+    "vuepress": "^1.8.2"
   },
   "alias": {
     "vue": "./node_modules/vue/dist/vue.common.js"

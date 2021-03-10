@@ -26,7 +26,18 @@
 <body>
     <div id="app">
         <div class="box">
-            <c-button>Cute</c-button>
+            <c-loading></c-loading>
+        </div>
+        <div class="box">
+            <h3>Switch</h3>
+            <c-switch :value.sync="checked"></c-switch>
+            <c-switch disabled></c-switch>
+            <c-switch :value.sync="checked1" disabled></c-switch>
+
+        </div>
+        <div class="box">
+            <h3>Button</h3>
+            <c-button @click="f1">点击</c-button>
             <br>
             <c-button disabled>禁用</c-button>
             <br>
@@ -38,8 +49,15 @@
             <c-button circle>中圆</c-button>
             <c-button circle size="large">大圆</c-button>
             <br>
+            <c-button type="primary">主要</c-button>
+            <c-button type="success">成功</c-button>
+            <c-button type="info">信息</c-button>
+            <c-button type="warning">警告</c-button>
+            <c-button type="danger">危险</c-button>
+            <br>
 
         </div>
+
     </div>
     <script src="./src/app.js"></script>
 
