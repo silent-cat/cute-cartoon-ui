@@ -1,7 +1,8 @@
 <template>
   <div>
     <c-button>按钮</c-button>
-
+    <c-button circle>圆形</c-button>
+    <c-button type="danger">危险</c-button>
     <pre>
         <code>
             {{content}}
@@ -20,6 +21,8 @@ export default {
     return {
       content: `
           <c-button>按钮</c-button>
+          <c-button circle>圆形</c-button>
+          <c-button type="danger">危险</c-button>
           `
     }
   }
