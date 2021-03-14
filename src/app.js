@@ -16,8 +16,8 @@ new Vue({
   data() {
     return {
       checked: false,
-      checked1:true,
-      selectedTab:['1','3']
+      checked1: true,
+      selectedTab: ['1']
     }
   },
   methods: {

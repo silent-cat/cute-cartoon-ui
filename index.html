@@ -26,12 +26,23 @@
 <body>
     <div id="app">
         <div class="box">
-            <c-collapse :selected.sync="selectedTab">
-                <c-collapse-item title="标题1" name="1">11111111111</c-collapse-item>
-                <c-collapse-item title="标题二" name="2">2222222222222</c-collapse-item>
-                <c-collapse-item title="标题三" name="3">33333333333333</c-collapse-item>
+            <c-collapse :selected.sync="selectedTab" single>
+                <c-collapse-item title="糖果" name="1">
+                    <p>软糖</p>
+                    <p>话梅糖</p>
+                    <p>奶糖</p>
+                </c-collapse-item>
+                <c-collapse-item title="动漫" name="2">
+                    <p>死亡笔记</p>
+                    <p>黑礁</p>
+                    <p>斩服少女</p>
+                </c-collapse-item>
+                <c-collapse-item title="水果" name="3">
+                    <p>橘子</p>
+                    <p>西瓜</p>
+                    <p>菠萝</p>
+                </c-collapse-item>
             </c-collapse>
-            {{selectedTab}}
         </div>
         <div class="box">
             <h3>Switch</h3>
