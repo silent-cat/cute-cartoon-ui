@@ -26,7 +26,12 @@
 <body>
     <div id="app">
         <div class="box">
-            <c-loading></c-loading>
+            <c-collapse :selected.sync="selectedTab">
+                <c-collapse-item title="标题1" name="1">11111111111</c-collapse-item>
+                <c-collapse-item title="标题二" name="2">2222222222222</c-collapse-item>
+                <c-collapse-item title="标题三" name="3">33333333333333</c-collapse-item>
+            </c-collapse>
+            {{selectedTab}}
         </div>
         <div class="box">
             <h3>Switch</h3>
