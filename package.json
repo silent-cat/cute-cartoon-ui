@@ -8,7 +8,7 @@
   "scripts": {
     "start": "parcel index.html --no-cache",
     "test": "parcel build test/* --no-minify && karma start --single-run",
-    "docs:dev": "vuepress dev docs",
+    "docs:dev": "vuepress dev docs --temp .temp",
     "docs:build": "vuepress build docs"
   },
   "dependencies": {},

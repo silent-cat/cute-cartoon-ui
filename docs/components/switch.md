@@ -4,3 +4,5 @@
 <ClientOnly>
     <switch-demos></switch-demos>
 </ClientOnly>
+
+属性：:value.sync="checked"\disabled

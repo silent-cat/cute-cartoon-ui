@@ -4,3 +4,5 @@
 <ClientOnly>
     <collapse-demos></collapse-demos>
 </ClientOnly>
+
+属性：single/:selected.sync/title/name
