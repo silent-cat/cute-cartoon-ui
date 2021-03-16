@@ -1,6 +1,6 @@
 <template>
-  <svg class="icon" aria-hidden="true" v-if="iconName">
-    <use :xlink:href=" `#icon-${iconName}` "></use>
+  <svg class="cc-icon" aria-hidden="true" v-if="name">
+    <use :xlink:href=" `#icon-${name}` "></use>
   </svg>
 </template>
 
@@ -8,16 +8,15 @@
   import './svg.js'
 
   export default {
-    name: 'InitIcon',
-    props: ['iconName']
+    props: ['name']
   }
 </script>
 
 <style lang="scss" scoped>
 
-  .icon {
-    width: 1em;
-    height: 1em;
+  .cc-icon {
+    width: 2.5rem;
+    height: 2.5rem;
     vertical-align: middle;
     fill: currentColor;
     overflow: hidden;

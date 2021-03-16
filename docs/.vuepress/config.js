@@ -19,6 +19,7 @@ module.exports = {
           '/components/button',
           '/components/switch',
           '/components/collapse',
+          '/components/icon',
         ]
       }
     ]
