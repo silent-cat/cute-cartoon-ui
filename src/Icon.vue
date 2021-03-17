@@ -15,8 +15,8 @@
 <style lang="scss" scoped>
 
   .cc-icon {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 1.5rem;
+    height:1.5rem;
     vertical-align: middle;
     fill: currentColor;
     overflow: hidden;

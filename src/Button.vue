@@ -4,16 +4,31 @@
     :circle="circle"
     :class="{
       [`cc-button-${size}`]: true,
-      [`cc-button-${type}`]: true
+      [`cc-button-${type}`]: true,
+      [`cc-icon-${iconPosition}`]: true
     }"
     @click="$emit('click')"
   >
-    <slot />
+    <c-icon v-if="icon && !loading" :name="icon" class="icon"></c-icon>
+    <c-icon v-if="loading" name="loading" class="cc-icon loading"></c-icon>
+
+    <div class="cc-content">
+      <slot />
+    </div>
   </button>
 </template>
 <script>
+import Icon from './Icon'
 export default {
+  components: {
+    'c-icon': Icon
+  },
   props: {
+    icon: {},
+    loading: {
+      type: Boolean,
+      default: false
+    },
     size: {
       type: String,
       default: 'medium'
@@ -26,6 +41,14 @@ export default {
       type: String,
       default: 'primary'
     },
+    iconPosition: {
+      type: String,
+      default: 'left',
+      // 对传入的不合法iconPositon进行校验
+      validator(val) {
+        return val === 'left' || val === 'right'
+      }
+    }
   }
 }
 </script>
@@ -42,6 +65,11 @@ $border-color: #fff;
 $border-width: 2px;
 $border-radius: 4px;
 .cc-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle; //让inline-flex的元素对齐
+  display: flex;
   font-size: $font-size;
   vertical-align: middle;
   height: $height;
@@ -129,6 +157,35 @@ $border-radius: 4px;
     &:active {
       background-color: rgb(243, 124, 124);
     }
+  } // 控制图标位置的类
+  &.cc-icon-left {
+    > .cc-icon {
+      order: 1;
+      margin-right: 0.4em;
+    }
+    > .cc-content {
+      order: 2;
+    }
+  }
+  &.cc-icon-right {
+    > .cc-icon {
+      order: 2;
+      margin-left: 0.4em;
+    }
+    > .cc-content {
+      order: 1;
+    }
+  }
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  > .loading {
+    animation: spin 2s infinite linear;
   }
 }
 </style>
