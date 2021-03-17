@@ -26,11 +26,26 @@
 <body>
     <div id="app">
         <div class="box">
-            <c-button>
-                <c-icon name="edit"></c-icon>
-            </c-button>
-            <c-icon name="edit"></c-icon>
-            <c-icon name="edit"></c-icon>
+            <!-- <c-loading></c-loading> -->
+        </div>
+        <div class="box">
+            <h2>按钮组</h2>
+            <c-button-group>
+                <c-button icon="left">上一页</c-button>
+                <c-button icon="right" icon-position="right">下一页</c-button>
+            </c-button-group>
+            <c-button-group>
+                <c-button icon="addto">添加</c-button>
+                <c-button icon="delete">删除</c-button>
+                <c-button icon="edit">编辑</c-button>
+            </c-button-group>
+            <c-button-group>
+                <div>1</div>
+                <div>1</div>
+                <div>1</div>
+            </c-button-group>
+        </div>
+        <div class="box">
             <c-icon name="edit"></c-icon>
         </div>
         <div class="box">
@@ -63,15 +78,19 @@
             <h3>Button</h3>
             <c-button @click="f1">点击</c-button>
             <br>
+            <br>
             <c-button disabled>禁用</c-button>
+            <br>
             <br>
             <c-button size="small">小型按钮</c-button>
             <c-button>中型按钮</c-button>
             <c-button size="large">大型按钮</c-button>
             <br>
+            <br>
             <c-button circle size="small">小圆</c-button>
             <c-button circle>中圆</c-button>
             <c-button circle size="large">大圆</c-button>
+            <br>
             <br>
             <c-button type="primary">主要</c-button>
             <c-button type="success">成功</c-button>
@@ -79,7 +98,8 @@
             <c-button type="warning">警告</c-button>
             <c-button type="danger">危险</c-button>
             <br>
-            <c-button type="danger" icon="edit">危险</c-button>
+            <br>
+            <c-button type="danger" icon="edit" icon-position="right">危险</c-button>
             <c-button type="danger" loading>危险</c-button>
 
 

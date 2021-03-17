@@ -66,12 +66,10 @@ $border-width: 2px;
 $border-radius: 4px;
 .cc-button {
   display: inline-flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   vertical-align: middle; //让inline-flex的元素对齐
-  display: flex;
   font-size: $font-size;
-  vertical-align: middle;
   height: $height;
   background: $bg;
   padding: 0 1em;

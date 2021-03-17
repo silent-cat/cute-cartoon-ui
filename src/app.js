@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Button from './Button'
+import ButtonGroup from './ButtonGroup'
 import Icon from './Icon'
 import Switch from './Switch'
 import Loading from './Loading'
@@ -8,6 +9,7 @@ import CollapseItem from './CollapseItem'
 
 
 Vue.component('c-button', Button)
+Vue.component('c-button-group', ButtonGroup)
 Vue.component('c-icon', Icon)
 Vue.component('c-switch', Switch)
 Vue.component('c-loading', Loading)
