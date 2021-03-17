@@ -26,7 +26,22 @@
 <body>
     <div id="app">
         <div class="box">
-            <!-- <c-loading></c-loading> -->
+           <c-input v-model:value="value1" placeholder="请输入内容"></c-input>
+           <br>
+           <c-input :value="value1"></c-input>
+           <br>
+           <c-input value="触发change事件" @change="fn"></c-input>
+           <br>
+           <c-input value="触发focus事件" @focus="fn"></c-input>
+           <br>
+           <c-input value="触发blur事件" @blur="fn"></c-input>
+           <br>
+           <c-input placeholder="触发input事件" @blur="fn"></c-input>
+           <br>
+           <c-input disabled value="禁用"></c-input>
+           <br>
+           <c-input readonly value="只读"></c-input>
+           
         </div>
         <div class="box">
             <h2>按钮组</h2>

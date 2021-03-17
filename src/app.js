@@ -6,6 +6,7 @@ import Switch from './Switch'
 import Loading from './Loading'
 import Collapse from './Collapse'
 import CollapseItem from './CollapseItem'
+import Input from './Input'
 
 
 Vue.component('c-button', Button)
@@ -15,6 +16,7 @@ Vue.component('c-switch', Switch)
 Vue.component('c-loading', Loading)
 Vue.component('c-collapse', Collapse)
 Vue.component('c-collapse-item', CollapseItem)
+Vue.component('c-input',Input)
 new Vue({
   el: '#app',
   created() {},
@@ -22,12 +24,16 @@ new Vue({
     return {
       checked: false,
       checked1: true,
-      selectedTab: ['1']
+      selectedTab: ['1'],
+      value1:'同步输入框',
     }
   },
   methods: {
     f1() {
       alert(1)
+    },
+    fn(){
+      console.log('事件被触发')
     }
   }
 })
