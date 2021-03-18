@@ -26,6 +26,25 @@
 <body>
     <div id="app">
         <div class="box">
+            <c-tabs :selected.sync="selectedTab">
+                <c-tabs-head>
+                    <c-tabs-item name='tab1'>
+                        <!-- <c-icon icon-name="settings"></c-icon> -->
+                        Tab1
+                    </c-tabs-item>
+                    <c-tabs-item name='tab2'>Tab2123123</c-tabs-item>
+                    <c-tabs-item name='tab3'>Tab3</c-tabs-item>
+                    <c-tabs-item name='tab4'>Tab4</c-tabs-item>
+                </c-tabs-head>
+                <c-tabs-body>
+                    <c-tabs-panel name='tab1'>内容1</c-tabs-panel>
+                    <c-tabs-panel name='tab2'>内容2</c-tabs-panel>
+                    <c-tabs-panel name='tab3'>内容3</c-tabs-panel>
+                    <c-tabs-panel name='tab4'>内容4</c-tabs-panel>
+                </c-tabs-body>
+            </c-tabs>
+        </div>
+        <div class="box">
             <div class="grid-wrapper">
                 <c-row class="row">
                     <c-col class="item" span="24">col-24</c-col>
@@ -82,7 +101,7 @@
             <c-icon name="edit"></c-icon>
         </div>
         <div class="box">
-            <c-collapse :selected.sync="selectedTab" single>
+            <c-collapse :selected.sync="selected" single>
                 <c-collapse-item title="糖果" name="1">
                     <p>软糖</p>
                     <p>话梅糖</p>

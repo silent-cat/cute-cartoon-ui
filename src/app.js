@@ -9,7 +9,11 @@ import CollapseItem from './CollapseItem'
 import Input from './Input'
 import Col from './Col'
 import Row from './Row'
-
+import Tabs from './Tabs'
+import TabsBody from './TabsBody'
+import TabsHead from './TabsHead'
+import TabsItem from './TabsItem'
+import TabsPanel from './TabsPanel'
 
 Vue.component('c-button', Button)
 Vue.component('c-button-group', ButtonGroup)
@@ -18,9 +22,14 @@ Vue.component('c-switch', Switch)
 Vue.component('c-loading', Loading)
 Vue.component('c-collapse', Collapse)
 Vue.component('c-collapse-item', CollapseItem)
-Vue.component('c-input',Input)
-Vue.component('c-col',Col)
-Vue.component('c-row',Row)
+Vue.component('c-input', Input)
+Vue.component('c-col', Col)
+Vue.component('c-row', Row)
+Vue.component('c-tabs', Tabs)
+Vue.component('c-tabs-body', TabsBody)
+Vue.component('c-tabs-head', TabsHead)
+Vue.component('c-tabs-item', TabsItem)
+Vue.component('c-tabs-panel', TabsPanel)
 new Vue({
   el: '#app',
   created() {},
@@ -28,15 +37,16 @@ new Vue({
     return {
       checked: false,
       checked1: true,
-      selectedTab: ['1'],
-      value1:'',
+      selected: ['1'],
+      value1: '',
+      selectedTab: 'tab1'
     }
   },
   methods: {
     f1() {
       alert(1)
     },
-    fn(){
+    fn() {
       console.log('事件被触发')
     }
   }

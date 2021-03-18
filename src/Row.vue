@@ -1,5 +1,5 @@
 <template>
-  <div class="cc-row" :style="rowStyle" :class="rowClass">
+  <div class="row" :style="rowStyle" :class="rowClass">
     <slot></slot>
   </div>
 </template>
@@ -41,7 +41,7 @@
 </script>
 
 <style lang="scss" scoped>
-  .cc-row {
+  .row {
     display: flex;
     flex-wrap: wrap;
 
