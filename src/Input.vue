@@ -1,5 +1,6 @@
 <template>
-  <div class="cc-input-wrapper" :class="{ error }">
+  <!-- <div class="cc-input-wrapper" :class="{ error }"> -->
+  <div class="cc-input-wrapper">
     <label>
       <input
         type="text"
@@ -7,16 +8,14 @@
         :disabled="disabled"
         :readonly="readonly"
         :placeholder="placeholder"
-        :clearable="clearable"
-        @change="$emit('change', $event.target.value)"
         @input="$emit('input', $event.target.value)"
         @focus="$emit('focus', $event.target.value)"
         @blur="$emit('blur', $event.target.value)"
       />
-      <template v-if="error">
+      <!-- <template v-if="error">
         <Icon class="cc-icon-error" name="error"></Icon>
         <span class="cc-error-message">{{ error }}</span>
-      </template>
+      </template> -->
     </label>
   </div>
 </template>
@@ -38,20 +37,14 @@ export default {
       type: Boolean,
       default: false
     },
-    error: {
-      type: String
-    },
+    // error: {
+    //   type: String
+    // },
     placeholder: {
       type: String
-    },
-    clearable: {
-      type: Boolean,
-      default:false
     }
   },
-  methods:{
-
-  }
+  methods: {}
 }
 </script>
 
@@ -96,7 +89,7 @@ $red: #f1453d;
     }
   }
 
-  &.error {
+  /* &.error {
     > label {
       > input {
         border-color: $red;
@@ -110,6 +103,6 @@ $red: #f1453d;
         color: $red;
       }
     }
-  }
+  } */
 }
 </style>

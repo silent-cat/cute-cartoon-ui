@@ -25,7 +25,7 @@ new Vue({
       checked: false,
       checked1: true,
       selectedTab: ['1'],
-      value1:'同步输入框',
+      value1:'',
     }
   },
   methods: {
