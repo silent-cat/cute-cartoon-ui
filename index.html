@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
+    <style lang="scss">
         * {
             margin: 0;
             padding: 0;
@@ -26,18 +26,40 @@
 <body>
     <div id="app">
         <div class="box">
-           <c-input v-model:value="value1" placeholder="同步输入框"></c-input>
-           <br>
-           <c-input :value="value1" placeholder="同步输入框"></c-input>
-           <br>
-           <c-input value="触发focus事件" @focus="fn"></c-input>
-           <br>
-           <c-input value="触发blur事件" @blur="fn"></c-input>
-           <br>
-           <c-input disabled value="禁用"></c-input>
-           <br>
-           <c-input readonly value="只读"></c-input>
-           
+            <div class="grid-wrapper">
+                <c-row class="row">
+                    <c-col class="item" span="24">col-24</c-col>
+                </c-row>
+                <c-row>
+                    <c-col class="item" span="12">col-12</c-col>
+                    <c-col class="item" span="12">col-12</c-col>
+                </c-row>
+                <c-row class="row">
+                    <c-col class="item" span="8">col-8</c-col>
+                    <c-col class="item" span="8">col-8</c-col>
+                    <c-col class="item" span="8">col-8</c-col>
+                </c-row>
+                <c-row class="row">
+                    <c-col class="item" span="6">col-6</c-col>
+                    <c-col class="item" span="6">col-6</c-col>
+                    <c-col class="item" span="6">col-6</c-col>
+                    <c-col class="item" span="6">col-6</c-col>
+                </c-row>
+            </div>
+        </div>
+        <div class="box">
+            <c-input v-model:value="value1" placeholder="同步输入框"></c-input>
+            <br>
+            <c-input :value="value1" placeholder="同步输入框"></c-input>
+            <br>
+            <c-input value="触发focus事件" @focus="fn"></c-input>
+            <br>
+            <c-input value="触发blur事件" @blur="fn"></c-input>
+            <br>
+            <c-input disabled value="禁用"></c-input>
+            <br>
+            <c-input readonly value="只读"></c-input>
+
         </div>
         <div class="box">
             <h2>按钮组</h2>

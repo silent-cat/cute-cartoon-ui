@@ -20,6 +20,7 @@ module.exports = {
           '/components/switch',
           '/components/collapse',
           '/components/icon',
+          '/components/grid',
         ]
       }
     ]

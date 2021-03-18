@@ -7,6 +7,8 @@ import Loading from './Loading'
 import Collapse from './Collapse'
 import CollapseItem from './CollapseItem'
 import Input from './Input'
+import Col from './Col'
+import Row from './Row'
 
 
 Vue.component('c-button', Button)
@@ -17,6 +19,8 @@ Vue.component('c-loading', Loading)
 Vue.component('c-collapse', Collapse)
 Vue.component('c-collapse-item', CollapseItem)
 Vue.component('c-input',Input)
+Vue.component('c-col',Col)
+Vue.component('c-row',Row)
 new Vue({
   el: '#app',
   created() {},
