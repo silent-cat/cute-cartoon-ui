@@ -1,12 +1,7 @@
 <template>
   <div>
-    <c-switch :value.sync="checked"></c-switch>
-    <c-switch disabled></c-switch>
-    <pre>
-        <code>
-            {{content}}
-        </code>
-    </pre>
+    <c-switch v-model:value="checked"></c-switch>
+    
   </div>
 </template>
 
@@ -22,7 +17,7 @@ export default {
           <c-switch :value.sync="checked"></c-switch>
           <c-switch disabled></c-switch>
           `,
-      checked:false
+      checked: false
     }
   }
 }

@@ -82,7 +82,11 @@ $border-radius: 4px;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
   &[disabled] {
     cursor: not-allowed;
-    background-color: $forbidden-bg;
+    opacity:.6;
+    &:active{
+      background-color: $bg;
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+    }
   }
   &[circle] {
     width: $height * 1.2;
@@ -134,24 +138,45 @@ $border-radius: 4px;
   // type
   &-success {
     background-color: rgb(99, 206, 99);
+    &[disabled]{
+      &:active {
+      background-color: rgb(99, 206, 99);
+    }
+    }
     &:active {
       background-color: rgb(121, 209, 121);
     }
+    
   }
   &-info {
     background-color: rgb(154, 158, 167);
+    &[disabled]{
+      &:active {
+      background-color: rgb(154, 158, 167);
+    }
+    }
     &:active {
       background-color: rgb(165, 166, 170);
     }
   }
   &-warning {
     background-color: #ffab85;
+    &[disabled]{
+      &:active {
+      background-color: #ffab85;
+    }
+    }
     &:active {
       background-color: #faaf8d;
     }
   }
   &-danger {
     background-color: rgb(245, 108, 108);
+    &[disabled]{
+      &:active {
+      background-color: rgb(245, 108, 108);
+    }
+    }
     &:active {
       background-color: rgb(243, 124, 124);
     }
@@ -183,7 +208,7 @@ $border-radius: 4px;
     }
   }
   > .loading {
-    animation: spin 2s infinite linear;
+    animation: spin 500ms infinite linear;
   }
 }
 </style>

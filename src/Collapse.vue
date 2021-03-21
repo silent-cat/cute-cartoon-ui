@@ -8,7 +8,7 @@
 import Vue from 'vue'
 export default {
   props: {
-    single: {
+    accordion: {
       type: Boolean,
       default: false
     },
@@ -22,7 +22,7 @@ export default {
     }
   },
   provide() {
-    // if(this.single){
+    // if(this.accordion){
     return {
       eventBus: this.eventBus
       // }
@@ -32,7 +32,7 @@ export default {
     this.eventBus.$emit('update:selected', this.selected)
     this.eventBus.$on('update:addselected', name => {
       let selectedCopy = JSON.parse(JSON.stringify(this.selected))
-      if (this.single) {
+      if (this.accordion) {
         selectedCopy = [name]
       } else {
         selectedCopy.push(name)

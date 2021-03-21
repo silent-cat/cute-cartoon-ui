@@ -1,15 +1,10 @@
 <template>
   <div>
-    <c-collapse :selected.sync="selectedTab" single>
+    <c-collapse :selected.sync="selectedTab">
       <c-collapse-item title="水果" name="1">Fruits</c-collapse-item>
       <c-collapse-item title="蔬菜" name="2">Vegetables</c-collapse-item>
       <c-collapse-item title="奶类" name="3">Milk</c-collapse-item>
     </c-collapse>
-    <pre>
-        <code>
-            {{content}}
-        </code>
-    </pre>
   </div>
 </template>
 
@@ -23,13 +18,6 @@ export default {
   },
   data() {
     return {
-      content: `
-    <c-collapse :selected.sync="selectedTab" single>
-      <c-collapse-item title="水果" name="1">Fruits</c-collapse-item>
-      <c-collapse-item title="蔬菜" name="2">Vegetables</c-collapse-item>
-      <c-collapse-item title="奶类" name="3">Milk</c-collapse-item>
-    </c-collapse>
-          `,
       selectedTab: ['1']
     }
   }

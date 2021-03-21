@@ -1,18 +1,16 @@
 ---
 title: 'Grid - 栅格'
 ---
-# 栅格
+# Grid 栅格
 栅格系统
 
-## 预览
-&nbsp;
+## 基本用法
 <ClientOnly>
   <grid-demo></grid-demo>
 </ClientOnly>
 
 ## 使用方法
 ```vue
-<template>
   <div class="grid-wrapper">
     <c-row class="row">
       <c-col class="item" span="24">col-24</c-col>
@@ -33,21 +31,20 @@ title: 'Grid - 栅格'
       <c-col class="item" span="6">col-6</c-col>
     </c-row>
   </div>
-</template>
-<style lang="scss" scoped>
-  *{
-    box-sizing: border-box;
-  }
-  .grid-wrapper{
-    $background: #3eaf7c;
-    > .row{ padding: .2em;
-      > .item { text-align: center; color: white;
-        &:nth-child(odd){ background: $background; }
-        &:nth-child(even){ background: lighten($background,20%); color: black; }
+  <style lang="scss" scoped>
+    *{
+      box-sizing: border-box;
+    }
+    .grid-wrapper{
+      $background: #3eaf7c;
+      > .row{ padding: .2em;
+        > .item { text-align: center; color: white;
+          &:nth-child(odd){ background: $background; }
+          &:nth-child(even){ background: lighten($background,20%); color: black; }
+        }
       }
     }
-  }
-</style>
+  </style>
 ```
 ## 选项
 ### Row 选项
