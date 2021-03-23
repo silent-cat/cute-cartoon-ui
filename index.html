@@ -26,6 +26,20 @@
 <body>
     <div id="app">
         <div class="box">
+            <!-- <div class="list">
+                <template v-if="count">
+                    <ul>
+                        <li v-for="item in items">...</li>
+                    </ul>
+                    <c-pagination :page-index="currentPage" :total="count" :page-size="pageSize" @change="pageChange">
+                    </c-pagination>
+                </template>
+            </div> -->
+
+            <c-pagination :page-index="currentPage" :total="count" :page-size="pageSize" @change="pageChange">
+            </c-pagination>
+        </div>
+        <div class="box">
             <c-tabs :selected.sync="selectedTab">
                 <c-tabs-head>
                     <c-tabs-item name='tab1'>
