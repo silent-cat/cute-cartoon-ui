@@ -63,7 +63,7 @@ export default {
     },
 
     //当前页码
-    pageIndex: {
+    pageNumber: {
       type: Number,
       default: 1
     },
@@ -151,7 +151,7 @@ export default {
   },
   data() {
     return {
-      index: this.pageIndex, //当前页码
+      index: this.pageNumber, //当前页码
       limit: this.pageSize, //每页显示条数
       size: this.total || 1, //总记录数
       showPrevMore: false,
@@ -159,7 +159,7 @@ export default {
     }
   },
   watch: {
-    pageIndex(val) {
+    pageNumber(val) {
       this.index = val || 1
     },
     pageSize(val) {

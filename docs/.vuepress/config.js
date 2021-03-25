@@ -21,6 +21,7 @@ module.exports = {
           '/components/collapse',
           '/components/icon',
           '/components/grid',
+          '/components/pagination',
         ]
       }
     ]

@@ -15,6 +15,9 @@ import TabsHead from './TabsHead'
 import TabsItem from './TabsItem'
 import TabsPanel from './TabsPanel'
 import Pagination from './Pagination'
+import Calendar from './Calendar'
+import Toast from './Toast'
+import plugin from './plugin'
 
 Vue.component('c-button', Button)
 Vue.component('c-button-group', ButtonGroup)
@@ -32,6 +35,9 @@ Vue.component('c-tabs-head', TabsHead)
 Vue.component('c-tabs-item', TabsItem)
 Vue.component('c-tabs-panel', TabsPanel)
 Vue.component('c-pagination', Pagination)
+Vue.component('c-calendar', Calendar)
+Vue.component('c-toast',Toast)
+Vue.use(plugin)
 new Vue({
   el: '#app',
   created() {},
@@ -42,11 +48,36 @@ new Vue({
       selected: ['1'],
       value1: '',
       selectedTab: 'tab1',
-
+      // 分页组件
       pageSize: 2, //每页显示20条数据
       currentPage: 1, //当前页码
       count: 0, //总记录数
-      items: []
+      items: [],
+      // 日历组件
+
+      selMode: 'singleSel', // singleSel, mutiSel, rangeSel
+      list: [
+        {
+          year: '2019',
+          month: '8',
+          day: '21'
+        },
+        {
+          year: '2019',
+          month: '8',
+          day: '20'
+        },
+        {
+          year: '2019',
+          month: '7',
+          day: '10'
+        }
+      ],
+      curSel: {
+        year: '2019',
+        month: '8',
+        day: '23'
+      },
     }
   },
   mounted() {
@@ -69,40 +100,55 @@ new Vue({
       //   this.items = body.list
       // })
 
-      this.count = 25;
+      this.count = 25
       this.items = [
-        {id:1},
-        {id:2},
-        {id:3},
-        {id:4},
-        {id:5},
-        {id:6},
-        {id:7},
-        {id:8},
-        {id:9},
-        {id:10},
-        {id:11},
-        {id:12},
-        {id:13},
-        {id:14},
-        {id:15},
-        {id:16},
-        {id:17},
-        {id:18},
-        {id:19},
-        {id:20},
-        {id:21},
-        {id:22},
-        {id:23},
-        {id:24},
-        {id:25}
+        { id: 1 },
+        { id: 2 },
+        { id: 3 },
+        { id: 4 },
+        { id: 5 },
+        { id: 6 },
+        { id: 7 },
+        { id: 8 },
+        { id: 9 },
+        { id: 10 },
+        { id: 11 },
+        { id: 12 },
+        { id: 13 },
+        { id: 14 },
+        { id: 15 },
+        { id: 16 },
+        { id: 17 },
+        { id: 18 },
+        { id: 19 },
+        { id: 20 },
+        { id: 21 },
+        { id: 22 },
+        { id: 23 },
+        { id: 24 },
+        { id: 25 }
       ]
     },
 
     // //从page组件传递过来的当前page
     pageChange(page) {
+      console.log(page)
       this.currentPage = page
       this.getList()
+    },
+
+    showToast() {
+      this.$toast(`<strong style="color:red">message11${parseInt(Math.random() * 100)}</strong>`, {
+        enableHtml: true,
+        position: 'top',
+        autoClose:false,
+        closeButton: {
+          text: '关闭',
+          callback: () => {
+            console.log('关闭成功')
+          }
+        },
+      })
     }
   }
 })
