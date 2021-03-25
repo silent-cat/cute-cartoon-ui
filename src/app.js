@@ -18,6 +18,7 @@ import Pagination from './Pagination'
 import Calendar from './Calendar'
 import Toast from './Toast'
 import plugin from './plugin'
+import Popover from './Popover'
 
 Vue.component('c-button', Button)
 Vue.component('c-button-group', ButtonGroup)
@@ -38,6 +39,7 @@ Vue.component('c-pagination', Pagination)
 Vue.component('c-calendar', Calendar)
 Vue.component('c-toast',Toast)
 Vue.use(plugin)
+Vue.component('c-popover',Popover)
 new Vue({
   el: '#app',
   created() {},
