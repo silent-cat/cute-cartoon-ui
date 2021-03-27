@@ -7,17 +7,17 @@
 </ClientOnly>
 
 ```vue
-    <c-collapse :selected.sync="selectedTab">
-      <c-collapse-item title="水果" name="1">Fruits</c-collapse-item>
-      <c-collapse-item title="蔬菜" name="2">Vegetables</c-collapse-item>
-      <c-collapse-item title="奶类" name="3">Milk</c-collapse-item>
+    <c-collapse :selected.sync="selectedTab" accordion>
+      <c-collapse-item title="水果" name="fruits">Fruits</c-collapse-item>
+      <c-collapse-item title="蔬菜" name="vegetables">Vegetables</c-collapse-item>
+      <c-collapse-item title="牛奶" name="milk">Milk</c-collapse-item>
     </c-collapse>
 
     <script>
     export default {
         data() {
             return {
-                selectedTab: ['1']
+                selectedTab: ['fruits']
             }
         }
     }
@@ -49,13 +49,13 @@
     </script>
 ```
 
-collapse 属性
+### Collapse 属性
 | 参数          | 说明             | 类型    | 可选值                   | 默认值  |
 | :------------ | :--------------- | :------ | :---------- | :------ |
 | selected         | 选中的菜单            | array | - | - |
 | accordion         | 进入手风琴模式             | boolean | false /true  | false |
 
-collapse-item 属性
+### CollapseItem 属性
 
 | 参数          | 说明             | 类型    | 可选值                   | 默认值  |
 | :------------ | :--------------- | :------ | :---------- | :------ |

@@ -49,7 +49,12 @@ export default {
         return val === 'left' || val === 'right'
       }
     }
-  }
+  },
+  data() {
+    return {
+      show: false
+    }
+  },
 }
 </script>
 <style lang="scss">
@@ -65,6 +70,7 @@ $border-color: #fff;
 $border-width: 2px;
 $border-radius: 4px;
 .cc-button {
+  margin: 2px 6px 2px 0px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -82,8 +88,8 @@ $border-radius: 4px;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
   &[disabled] {
     cursor: not-allowed;
-    opacity:.6;
-    &:active{
+    opacity: 0.6;
+    &:active {
       background-color: $bg;
       box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
     }
@@ -138,22 +144,21 @@ $border-radius: 4px;
   // type
   &-success {
     background-color: rgb(99, 206, 99);
-    &[disabled]{
+    &[disabled] {
       &:active {
-      background-color: rgb(99, 206, 99);
-    }
+        background-color: rgb(99, 206, 99);
+      }
     }
     &:active {
       background-color: rgb(121, 209, 121);
     }
-    
   }
   &-info {
     background-color: rgb(154, 158, 167);
-    &[disabled]{
+    &[disabled] {
       &:active {
-      background-color: rgb(154, 158, 167);
-    }
+        background-color: rgb(154, 158, 167);
+      }
     }
     &:active {
       background-color: rgb(165, 166, 170);
@@ -161,10 +166,10 @@ $border-radius: 4px;
   }
   &-warning {
     background-color: #ffab85;
-    &[disabled]{
+    &[disabled] {
       &:active {
-      background-color: #ffab85;
-    }
+        background-color: #ffab85;
+      }
     }
     &:active {
       background-color: #faaf8d;
@@ -172,10 +177,10 @@ $border-radius: 4px;
   }
   &-danger {
     background-color: rgb(245, 108, 108);
-    &[disabled]{
+    &[disabled] {
       &:active {
-      background-color: rgb(245, 108, 108);
-    }
+        background-color: rgb(245, 108, 108);
+      }
     }
     &:active {
       background-color: rgb(243, 124, 124);

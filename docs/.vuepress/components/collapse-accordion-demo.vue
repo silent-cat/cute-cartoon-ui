@@ -1,9 +1,9 @@
 <template>
   <div>
     <c-collapse :selected.sync="selectedTab" accordion>
-      <c-collapse-item title="水果" name="1">Fruits</c-collapse-item>
-      <c-collapse-item title="蔬菜" name="2">Vegetables</c-collapse-item>
-      <c-collapse-item title="奶类" name="3">Milk</c-collapse-item>
+      <c-collapse-item title="水果" name="fruits">Fruits</c-collapse-item>
+      <c-collapse-item title="蔬菜" name="vegetables">Vegetables</c-collapse-item>
+      <c-collapse-item title="牛奶" name="milk">Milk</c-collapse-item>
     </c-collapse>
   </div>
 </template>
@@ -18,7 +18,7 @@ export default {
   },
   data() {
     return {
-      selectedTab: ['1']
+      selectedTab: ['fruits']
     }
   }
 }

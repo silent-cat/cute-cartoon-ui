@@ -1,6 +1,6 @@
 <template>
   <div>
-    <c-button size="primary" loading>加载中</c-button>
+    <c-button @click="clickEvent">点击</c-button>
   </div>
 </template>
 
@@ -10,11 +10,13 @@ export default {
   components: {
     'c-button': Button
   },
-  methods: {},
+  methods: {
+    clickEvent() {
+      alert('触发按钮的点击事件')
+    }
+  },
   data() {
     return {}
   }
 }
 </script>
-
-<style></style>

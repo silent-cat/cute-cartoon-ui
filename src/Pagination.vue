@@ -77,7 +77,7 @@ export default {
     //总记录数
     total: {
       type: Number,
-      default: 1
+      default: 0
     }
   },
   methods: {

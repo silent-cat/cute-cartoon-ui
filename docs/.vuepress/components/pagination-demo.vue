@@ -1,11 +1,4 @@
 <template>
-  <!-- <c-pagination
-    :page-index="pageNumber"
-    :total="total"
-    :page-size="pageSize"
-    @change="pageChange"
-  /> -->
-
   <div>
     <template v-if="total">
       <ul>
@@ -49,9 +42,9 @@ export default {
         { id: `第${pageNumber}页-${pageNumber * 10 + 2}` }
       ]
     },
-    pageChange(page) {
-      this.pageNumber = page
-      this.getList(page)
+    pageChange(pageNumber) {
+      this.pageNumber = pageNumber
+      this.getList(this.pageNumber)
     }
   }
 }

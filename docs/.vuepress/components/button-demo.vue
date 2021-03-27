@@ -14,7 +14,6 @@
       <c-button type="warning" circle>警告</c-button>
       <c-button type="danger" circle>危险</c-button>
     </c-row>
-
   </div>
 </template>
 
@@ -32,5 +31,3 @@ export default {
   }
 }
 </script>
-
-<style></style>

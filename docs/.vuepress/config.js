@@ -1,17 +1,17 @@
 module.exports = {
   base:'/cute-cartoon-ui/',
-  title: 'cute-cartoon-ui',
+  title: 'Cube UI',
   description: '一个好用的组件库',
   themeConfig: {
     nav: [
       { text: '主页', link: '/' },
-      { text: '文档', link: '/install/' },
-      { text: 'GitHub', link: 'https://github.com/wh2887/init-ui/' },
+      { text: '文档', link: '/intro/' },
+      { text: 'GitHub', link: 'https://github.com/silent-cat/cute-cartoon-ui' },
     ],
     sidebar: [
       {
-        title: '入门',
-        children: ['/install/', '/get-started/']
+        title: '概览',
+        children: ['/intro/', '/get-started/']
       },
       {
         title: '组件',
@@ -22,8 +22,12 @@ module.exports = {
           '/components/icon',
           '/components/grid',
           '/components/pagination',
+          '/components/tabs',
+          '/components/toast',
+          '/components/popover',
         ]
       }
-    ]
-  }
+    ],
+    lastUpdated: '最近更新', // string | boolean
+  },
 }
