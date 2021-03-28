@@ -11,7 +11,7 @@ toast两秒后消失，可手动关闭
 </ClientOnly>
 
 ```vue
-    <c-button @click="$toast(`显示toast`)">显示toast</c-button>
+  <c-button @click="$toast(`显示toast`)">显示toast</c-button>
 ```
 
 ## 关闭自动关闭
@@ -21,7 +21,7 @@ toast默认是自动关闭的，启动autoClose为true关闭自动关闭，只�
 </ClientOnly>
 
 ```vue
-    <c-button @click="$toast(`显示toast`,{autoClose:false})">显示toast</c-button>
+  <c-button @click="$toast(`显示toast`,{autoClose:false})">显示toast</c-button>
 ```
 
 ## 支持HTML
@@ -32,7 +32,36 @@ toast默认是自动关闭的，启动autoClose为true关闭自动关闭，只�
 </ClientOnly>
 
 ```vue
-    <c-button @click="$toast(`<h3>显示toast</h3>`,{enableHtml:true})">支持HTML</c-button>
+  <c-button @click="$toast(`<h3>显示toast</h3>`,{enableHtml:true})">支持HTML</c-button>
+```
+
+## 设置toast按钮的文本内容与回调
+closeButton 选项接收一个对象。对象包括 text 与 callback 属性。用于设定按钮的文本与回调。
+<ClientOnly>
+<toast-close-button-demo></toast-close-button-demo>
+</ClientOnly>
+
+```vue
+  <c-button @click="showToast"></c-button>
+
+  <script>
+  export default {
+    methods: {
+      showToast() {
+        this.$toast(`内容`, {
+          autoClose:false,
+          closeButton: {
+            text: '点击按钮触发回调函数',
+            callback: function test() {
+              alert('回调函数已执行')
+            }
+          }
+        })
+      }
+    }
+  }
+</script>
+
 ```
 
 ## 不同位置
@@ -43,11 +72,11 @@ toast默认是自动关闭的，启动autoClose为true关闭自动关闭，只�
 </ClientOnly>
 
 ```vue
-    <c-button @click="showToast('top')">上方显示</c-button>
-    <c-button @click="showToast('center')">中间显示</c-button>
-    <c-button @click="showToast('bottom')">下方显示</c-button>
+  <c-button @click="showToast('top')">上方显示</c-button>
+  <c-button @click="showToast('center')">中间显示</c-button>
+  <c-button @click="showToast('bottom')">下方显示</c-button>
 
-    <script>
+  <script>
     export default {
       methods: {
         showToast(position) {
@@ -59,7 +88,7 @@ toast默认是自动关闭的，启动autoClose为true关闭自动关闭，只�
         }
       }
     }
-    </script>
+  </script>
 
 ```
 

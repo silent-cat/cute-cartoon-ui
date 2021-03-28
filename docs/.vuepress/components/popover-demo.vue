@@ -1,22 +1,22 @@
 <template>
   <div class="popover-wrapper">
-    <c-popover position="bottom">
+    <c-popover position="left">
       <template slot="content">
         popover 中的内容
       </template>
-      <c-button>下方显示内容</c-button>
+      <c-button>左方</c-button>
     </c-popover>
     <c-popover>
+      <c-button>click</c-button>
       <template slot="content">
         popover 中的内容
       </template>
-      <c-button>点击显示</c-button>
     </c-popover>
     <c-popover trigger="hover">
       <template slot="content">
         popover 中的内容
       </template>
-      <c-button>hover 显示内容</c-button>
+      <c-button>hover</c-button>
     </c-popover>
   </div>
 </template>

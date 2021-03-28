@@ -62,8 +62,6 @@
                 </template>
             </div> -->
 
-            <c-pagination :page-number="currentPage" :total="total" :page-size="pageSize" @change="pageChange">
-            </c-pagination>
         </div>
         <div class="box">
             <c-tabs :selected.sync="selectedTab">
@@ -106,7 +104,7 @@
             </div>
         </div>
         <div class="box">
-            <c-input v-model:value="value1" placeholder="同步输入框"></c-input>
+            <c-input v-model="value1" placeholder="同步输入框"></c-input>
             <br>
             <c-input :value="value1" placeholder="同步输入框"></c-input>
             <br>
