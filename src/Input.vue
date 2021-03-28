@@ -3,11 +3,11 @@
   <div class="cc-input-wrapper">
     <label>
       <input
-        type="text"
         :value="value"
         :disabled="disabled"
         :readonly="readonly"
         :placeholder="placeholder"
+        :type="type"
         @input="$emit('input', $event.target.value)"
         @focus="$emit('focus', $event.target.value)"
         @blur="$emit('blur', $event.target.value)"
@@ -42,6 +42,10 @@ export default {
     // },
     placeholder: {
       type: String
+    },
+    type:{
+      type:String,
+      default:'text'
     }
   },
   methods: {}
@@ -81,9 +85,11 @@ $red: #f1453d;
         outline: none;
       }
 
-      &[disabled],
-      &[readonly] {
+      &[disabled]{
         color: #bbb;
+        cursor: not-allowed;
+      }
+      &[readonly]{
         cursor: not-allowed;
       }
     }
