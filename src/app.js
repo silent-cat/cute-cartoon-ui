@@ -19,6 +19,11 @@ import Calendar from './Calendar'
 import Toast from './Toast'
 import plugin from './plugin'
 import Popover from './Popover'
+import Layout from './Layout'
+import Header from './Header'
+import Content from './Content'
+import Footer from './Footer'
+import Aside from './Aside'
 
 Vue.component('c-button', Button)
 Vue.component('c-button-group', ButtonGroup)
@@ -40,6 +45,11 @@ Vue.component('c-calendar', Calendar)
 Vue.component('c-toast',Toast)
 Vue.use(plugin)
 Vue.component('c-popover',Popover)
+Vue.component('c-layout',Layout)
+Vue.component('c-header',Header)
+Vue.component('c-content',Content)
+Vue.component('c-footer',Footer)
+Vue.component('c-aside',Aside)
 new Vue({
   el: '#app',
   created() {},
@@ -80,6 +90,12 @@ new Vue({
         month: '8',
         day: '23'
       },
+
+      items:[
+        {name:'选项一',isChecked:true},
+        {name:'选项二',isChecked:false},
+        {name:'选项三',isChecked:false},
+      ]
     }
   },
   mounted() {

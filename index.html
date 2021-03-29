@@ -26,6 +26,16 @@
 <body>
     <div id="app">
         <div class="box">
+            <c-layout>
+                <c-aside>aside</c-aside>
+                <c-layout>
+                  <c-header>header</c-header>
+                  <c-content>content</c-content>
+                  <c-footer>footer</c-footer>
+                </c-layout>
+            </c-layout>
+        </div>
+        <div class="box">
             <c-popover position="bottom">
                 <template slot="content">
                     popover 中的内容
