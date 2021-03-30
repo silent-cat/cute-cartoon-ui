@@ -22,10 +22,8 @@ export default {
     }
   },
   provide() {
-    // if(this.accordion){
     return {
       eventBus: this.eventBus
-      // }
     }
   },
   mounted() {

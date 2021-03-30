@@ -5,13 +5,13 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: '主页', link: '/' },
-      { text: '文档', link: '/intro/' },
+      { text: '组件', link: '/components/intro' },
       { text: 'GitHub', link: 'https://github.com/silent-cat/cube-ui-pc' },
     ],
     sidebar: [
       {
-        title: '概览',
-        children: ['/intro/', '/get-started/']
+        title: '开发指南',
+        children: ['/components/intro', '/components/get-started']
       },
       {
         title: '组件',

@@ -3,7 +3,7 @@ home: true
 heroText: Cube UI 官网
 tagline: 基于 Vue.js2.0 实现的桌面端组件库
 actionText: 快速上手 →
-actionLink: /intro/
+actionLink: /components/intro
 features:
 - title: 简单易用
   details: 简单明确的使用步骤。
