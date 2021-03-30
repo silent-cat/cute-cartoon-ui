@@ -5,7 +5,7 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: '主页', link: '/' },
-      { text: '组件', link: '/components/intro' },
+      { text: '组件', link: '/components/' },
       { text: 'GitHub', link: 'https://github.com/silent-cat/cube-ui-pc' },
     ],
     sidebar: [
