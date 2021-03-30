@@ -1,5 +1,5 @@
 <template>
-  <main class="wy-layout-footer">
+  <main class="cube-container-footer">
     <slot></slot>
   </main>
 </template>
@@ -9,7 +9,7 @@ export default {}
 </script>
 
 <style lang="scss">
-.wy-layout-footer {
+.cube-container-footer {
   height: 4rem;
   line-height: 4rem;
   background-color: #65b2ff;

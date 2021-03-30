@@ -1,5 +1,5 @@
 <template>
-  <section class="wy-layout" :class="{ hasAside: bool }">
+  <section class="cube-container" :class="{ hasAside: bool }">
     <slot></slot>
   </section>
 </template>
@@ -11,22 +11,22 @@ import Footer from './Footer'
 import Aside from './Aside'
 
 export default {
-  components:{
-    'c-aside':Aside,
-    'c-header':Header,
-    'c-content':Content,
-    'c-footer':Footer,
+  components: {
+    'c-aside': Aside,
+    'c-header': Header,
+    'c-content': Content,
+    'c-footer': Footer
   },
-  data(){
+  data() {
     return {
-      bool:false
+      bool: false
     }
   },
-  mounted(){
+  mounted() {
     console.log(this.$slots.default)
-    this.$slots.default.forEach(item=>{
+    this.$slots.default.forEach(item => {
       // console.log()
-      if(item.componentOptions && item.componentOptions.tag==='c-aside'){
+      if (item.componentOptions && item.componentOptions.tag === 'c-aside') {
         this.bool = true
       }
     })
@@ -35,7 +35,7 @@ export default {
 </script>
 
 <style lang="scss">
-.wy-layout {
+.cube-container {
   display: flex;
   flex: auto;
   flex-direction: column;

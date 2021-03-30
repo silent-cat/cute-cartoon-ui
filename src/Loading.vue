@@ -1,5 +1,5 @@
 <template>
-  <div class="cc-loading"></div>
+  <div class="cube-loading"></div>
 </template>
 
 <script>
@@ -7,7 +7,7 @@ export default {}
 </script>
 
 <style lang="scss">
-.cc-loading {
+.cube-loading {
   /* 相对定位 */
   position: relative;
   width: 150px;
@@ -20,7 +20,7 @@ export default {}
   animation: rotate 2s linear infinite;
 }
 
-.cc-loading::before {
+.cube-loading::before {
   content: '';
   position: absolute;
   top: 5px;
@@ -34,7 +34,7 @@ export default {}
   animation: rotate 3s linear infinite;
 }
 
-.cc-loading::after {
+.cube-loading::after {
   content: '';
   position: absolute;
   top: 15px;

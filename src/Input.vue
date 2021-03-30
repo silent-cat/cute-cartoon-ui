@@ -1,6 +1,6 @@
 <template>
-  <!-- <div class="cc-input-wrapper" :class="{ error }"> -->
-  <div class="cc-input-wrapper">
+  <!-- <div class="cube-input-wrapper" :class="{ error }"> -->
+  <div class="cube-input-wrapper">
     <label>
       <input
         :value="value"
@@ -13,8 +13,8 @@
         @blur="$emit('blur', $event.target.value)"
       />
       <!-- <template v-if="error">
-        <Icon class="cc-icon-error" name="error"></Icon>
-        <span class="cc-error-message">{{ error }}</span>
+        <Icon class="cube-icon-error" name="error"></Icon>
+        <span class="cube-error-message">{{ error }}</span>
       </template> -->
     </label>
   </div>
@@ -43,9 +43,9 @@ export default {
     placeholder: {
       type: String
     },
-    type:{
-      type:String,
-      default:'text'
+    type: {
+      type: String,
+      default: 'text'
     }
   },
   methods: {}
@@ -59,7 +59,7 @@ $border-color-hover: #409eff;
 $border-radius: 4px;
 $font-size: 14px;
 $red: #f1453d;
-.cc-input-wrapper {
+.cube-input-wrapper {
   font-size: $font-size;
   display: inline-block;
   align-items: center;
@@ -85,11 +85,11 @@ $red: #f1453d;
         outline: none;
       }
 
-      &[disabled]{
+      &[disabled] {
         color: #bbb;
         cursor: not-allowed;
       }
-      &[readonly]{
+      &[readonly] {
         cursor: not-allowed;
       }
     }
@@ -101,11 +101,11 @@ $red: #f1453d;
         border-color: $red;
       }
 
-      .cc-icon-error {
+      .cube-icon-error {
         fill: $red;
       }
 
-      .cc-error-message {
+      .cube-error-message {
         color: $red;
       }
     }

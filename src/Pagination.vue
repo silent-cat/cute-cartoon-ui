@@ -1,41 +1,50 @@
 <template>
-  <ul class="cc-pagination">
+  <ul class="cube-pagination">
     <c-button
-      :class="['cc-pagination-item', 'cc-pagination-item--prev']"
+      :class="['cube-pagination-item', 'cube-pagination-item--prev']"
       :disabled="index === 1"
       @click="prev"
       icon="left"
     >
     </c-button>
     <c-button
-      :class="['cc-pagination-item', 'cc-pagination-item--first']"
+      :class="['cube-pagination-item', 'cube-pagination-item--first']"
       :disabled="index === 1"
       @click="first"
     >
       首页
     </c-button>
-    <c-button :class="['cc-pagination-item', 'cc-pagination-item--more']" v-if="showPrevMore">
+    <c-button
+      :class="['cube-pagination-item', 'cube-pagination-item--more']"
+      v-if="showPrevMore"
+    >
       ...
     </c-button>
     <c-button
-      :class="['cc-pagination-item', { 'cc-pagination-item--current': index === pager }]"
+      :class="[
+        'cube-pagination-item',
+        { 'cube-pagination-item--current': index === pager }
+      ]"
       v-for="pager in pagers"
       @click="go(pager)"
     >
       {{ pager }}
     </c-button>
-    <c-button :class="['cc-pagination-item', 'cc-pagination-item--more']" v-if="showNextMore">
+    <c-button
+      :class="['cube-pagination-item', 'cube-pagination-item--more']"
+      v-if="showNextMore"
+    >
       ...
     </c-button>
     <c-button
-      :class="['cc-pagination-item', 'cc-pagination-item--last']"
+      :class="['cube-pagination-item', 'cube-pagination-item--last']"
       :disabled="index === pages"
       @click="last"
     >
       尾页
     </c-button>
     <c-button
-      :class="['cc-pagination-item', 'cc-pagination-item--next']"
+      :class="['cube-pagination-item', 'cube-pagination-item--next']"
       :disabled="index === pages"
       @click="next"
       icon="right"
@@ -173,8 +182,8 @@ export default {
 </script>
 
 <style rel="stylesheet/scss" lang="scss" scoped>
-.cc-pagination {
-  > .cc-pagination-item {
+.cube-pagination {
+  > .cube-pagination-item {
     background-color: #f4f4f5;
     color: #000;
     margin-left: 0.2rem;
@@ -193,17 +202,17 @@ export default {
     &:last-child {
       margin-left: 0;
     }
-    &.cc-pagination-item--more {
+    &.cube-pagination-item--more {
       background-color: #fff;
       color: #505050;
     }
     //禁用
-    &.cc-pagination-item--more,
-    &.cc-pagination-item--current {
+    &.cube-pagination-item--more,
+    &.cube-pagination-item--current {
       cursor: default;
     }
     //选中
-    &.cc-pagination-item--current {
+    &.cube-pagination-item--current {
       background-color: #409eff;
       color: #fff;
     }

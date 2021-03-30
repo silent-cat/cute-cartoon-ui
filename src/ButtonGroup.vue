@@ -1,5 +1,5 @@
 <template>
-  <div class="cc-button-group"><slot /></div>
+  <div class="cube-button-group"><slot /></div>
 </template>
 <script>
 export default {
@@ -19,7 +19,7 @@ export default {
 
 <style lang="scss" scoped>
 $border-radius: 4px;
-.cc-button-group {
+.cube-button-group {
   display: inline-flex;
   vertical-align: middle;
   > .button {

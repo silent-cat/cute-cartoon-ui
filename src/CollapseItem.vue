@@ -1,9 +1,9 @@
 <template>
-  <div class="cc-collapse-item">
-    <div class="cc-title" @click="toggle">
+  <div class="cube-collapse-item">
+    <div class="cube-title" @click="toggle">
       {{ title }}
     </div>
-    <div class="cc-content" v-if="open">
+    <div class="cube-content" v-if="open">
       <slot></slot>
     </div>
   </div>
@@ -49,9 +49,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.cc-collapse-item {
+.cube-collapse-item {
   color: #fff;
-  > .cc-title {
+  > .cube-title {
     cursor: pointer;
     border: 1px solid #fff;
     margin: -1px -1px 0px -1px;
@@ -65,19 +65,19 @@ export default {
     }
   }
   &:first-child {
-    > .cc-title {
+    > .cube-title {
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
     }
   }
   &:last-child {
-    > .cc-title:last-child {
+    > .cube-title:last-child {
       border-bottom-left-radius: 4px;
       border-bottom-right-radius: 4px;
       margin-bottom: -1px;
     }
   }
-  > .cc-content {
+  > .cube-content {
     padding: 16px;
     background-color: #333;
   }

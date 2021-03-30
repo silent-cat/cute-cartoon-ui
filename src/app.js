@@ -15,11 +15,10 @@ import TabsHead from './TabsHead'
 import TabsItem from './TabsItem'
 import TabsPanel from './TabsPanel'
 import Pagination from './Pagination'
-import Calendar from './Calendar'
 import Toast from './Toast'
 import plugin from './plugin'
 import Popover from './Popover'
-import Layout from './Layout'
+import Container from './Container'
 import Header from './Header'
 import Content from './Content'
 import Footer from './Footer'
@@ -41,11 +40,10 @@ Vue.component('c-tabs-head', TabsHead)
 Vue.component('c-tabs-item', TabsItem)
 Vue.component('c-tabs-panel', TabsPanel)
 Vue.component('c-pagination', Pagination)
-Vue.component('c-calendar', Calendar)
 Vue.component('c-toast',Toast)
 Vue.use(plugin)
 Vue.component('c-popover',Popover)
-Vue.component('c-layout',Layout)
+Vue.component('c-container',Container)
 Vue.component('c-header',Header)
 Vue.component('c-content',Content)
 Vue.component('c-footer',Footer)

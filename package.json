@@ -2,7 +2,7 @@
   "name": "cube-ui-pc",
   "version": "0.0.1",
   "main": "dist/index.js",
-  "repository": "git@github.com:silent-cat/cute-cartoon-ui.git",
+  "repository": "git@github.com:silent-cat/cube-ui-pc.git",
   "author": "silent-cat",
   "license": "MIT",
   "scripts": {

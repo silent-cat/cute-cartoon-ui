@@ -1,18 +1,18 @@
 <template>
   <button
-    class="cc-button"
+    class="cube-button"
     :circle="circle"
     :class="{
-      [`cc-button-${size}`]: true,
-      [`cc-button-${type}`]: true,
-      [`cc-icon-${iconPosition}`]: true
+      [`cube-button-${size}`]: true,
+      [`cube-button-${type}`]: true,
+      [`cube-icon-${iconPosition}`]: true
     }"
     @click="$emit('click')"
   >
     <c-icon v-if="icon && !loading" :name="icon" class="icon"></c-icon>
-    <c-icon v-if="loading" name="loading" class="cc-icon loading"></c-icon>
+    <c-icon v-if="loading" name="loading" class="cube-icon loading"></c-icon>
 
-    <div class="cc-content">
+    <div class="cube-content">
       <slot />
     </div>
   </button>
@@ -54,7 +54,7 @@ export default {
     return {
       show: false
     }
-  },
+  }
 }
 </script>
 <style lang="scss">
@@ -69,7 +69,7 @@ $border-style: solid;
 $border-color: #fff;
 $border-width: 2px;
 $border-radius: 4px;
-.cc-button {
+.cube-button {
   margin: 2px 6px 2px 0px;
   display: inline-flex;
   align-items: center;
@@ -186,21 +186,21 @@ $border-radius: 4px;
       background-color: rgb(243, 124, 124);
     }
   } // 控制图标位置的类
-  &.cc-icon-left {
-    > .cc-icon {
+  &.cube-icon-left {
+    > .cube-icon {
       order: 1;
       margin-right: 0.4em;
     }
-    > .cc-content {
+    > .cube-content {
       order: 2;
     }
   }
-  &.cc-icon-right {
-    > .cc-icon {
+  &.cube-icon-right {
+    > .cube-icon {
       order: 2;
       margin-left: 0.4em;
     }
-    > .cc-content {
+    > .cube-content {
       order: 1;
     }
   }

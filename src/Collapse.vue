@@ -1,5 +1,5 @@
 <template>
-  <div class="cc-collpase">
+  <div class="cube-collpase">
     <slot></slot>
   </div>
 </template>
@@ -53,8 +53,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.cc-collpase {
-//   border: 2px solid #fff;
+.cube-collpase {
+  //   border: 2px solid #fff;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
   overflow: hidden;

@@ -1,7 +1,7 @@
 <template>
   <button
-    class="cc-switch"
-    :class="{ 'cc-switch-checked': value }"
+    class="cube-switch"
+    :class="{ 'cube-switch-checked': value }"
     @click="toggle"
   >
     <span></span>
@@ -19,7 +19,7 @@ export default {
   methods: {
     toggle() {
       // this.$emit('update:value', !this.value)
-      this.$emit('input',!this.value)
+      this.$emit('input', !this.value)
     }
   }
 }
@@ -29,7 +29,7 @@ export default {
 $height: 32px;
 $width: 84px;
 $bg: #fff;
-.cc-switch {
+.cube-switch {
   position: relative;
   height: $height;
   width: $width;

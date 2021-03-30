@@ -1,5 +1,5 @@
 <template>
-  <main class="wy-layout-content">
+  <main class="cube-container-content">
     <slot></slot>
   </main>
 </template>
@@ -9,7 +9,7 @@ export default {}
 </script>
 
 <style lang="scss">
-.wy-layout-content {
+.cube-container-content {
   flex-grow: 1;
   height: 12rem;
   line-height: 12rem;

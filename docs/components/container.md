@@ -1,51 +1,51 @@
-# Layout 布局
+# container 布局容器
 
-常见的基本布局
+常见的布局容器
 
 ## 上中下
 
 <ClientOnly>
-<layout-demo></layout-demo>
+<container-demo></container-demo>
 </ClientOnly>
 
 ```vue
-  <c-layout>
+  <c-container>
     <c-header>header</c-header>
     <c-content>content</c-content>
     <c-footer>footer</c-footer>
-  </c-layout>
+  </c-container>
 ```
 
 ## 内部侧边栏
 
 <ClientOnly>
-<layout-inner-demo></layout-inner-demo>
+<container-inner-demo></container-inner-demo>
 </ClientOnly>
 
 ```vue
-  <c-layout>
+  <c-container>
     <c-header>header</c-header>
-    <c-layout>
+    <c-container>
       <c-aside>aside</c-aside>
       <c-content>content</c-content>
-    </c-layout>
+    </c-container>
     <c-footer>footer</c-footer>
-  </c-layout>
+  </c-container>
 ```
 
 ## 外部侧边栏
 
 <ClientOnly>
-<layout-outer-demo></layout-outer-demo>
+<container-outer-demo></container-outer-demo>
 </ClientOnly>
 
 ```vue
-  <c-layout>
+  <c-container>
     <c-aside>aside</c-aside>
-    <c-layout>
+    <c-container>
       <c-header>header</c-header>
       <c-content>content</c-content>
       <c-footer>footer</c-footer>
-    </c-layout>
-  </c-layout>
+    </c-container>
+  </c-container>
 ```

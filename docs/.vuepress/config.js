@@ -1,12 +1,12 @@
 module.exports = {
-  base:'/cute-cartoon-ui/',
+  base:'/cube-ui-pc/',
   title: 'Cube UI',
   description: '一个好用的组件库',
   themeConfig: {
     nav: [
       { text: '主页', link: '/' },
       { text: '文档', link: '/intro/' },
-      { text: 'GitHub', link: 'https://github.com/silent-cat/cute-cartoon-ui' },
+      { text: 'GitHub', link: 'https://github.com/silent-cat/cube-ui-pc' },
     ],
     sidebar: [
       {
@@ -26,7 +26,7 @@ module.exports = {
           '/components/toast',
           '/components/popover',
           '/components/input',
-          '/components/layout'
+          '/components/container'
         ]
       }
     ],
