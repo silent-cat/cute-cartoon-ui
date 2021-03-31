@@ -3,9 +3,9 @@ module.exports = {
   title: 'Cube UI',
   description: '一个好用的组件库',
   themeConfig: {
+    logo: '/logo.png',
     nav: [
       { text: '主页', link: '/' },
-      // { text: '组件', link: '/components/'},
       { text: '文档', items:[{text:'开发指南',link:'/components/intro'},{text:'组件',link:'/components/button'}]},
       { text: 'GitHub', link: 'https://github.com/silent-cat/cube-ui-pc' },
     ],
