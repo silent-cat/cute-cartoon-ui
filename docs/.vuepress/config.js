@@ -5,7 +5,8 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: '主页', link: '/' },
-      { text: '组件', link: '/components/' },
+      // { text: '组件', link: '/components/'},
+      { text: '文档', items:[{text:'开发指南',link:'/components/intro'},{text:'组件',link:'/components/button'}]},
       { text: 'GitHub', link: 'https://github.com/silent-cat/cube-ui-pc' },
     ],
     sidebar: [
@@ -30,6 +31,6 @@ module.exports = {
         ]
       }
     ],
-    lastUpdated: '最近更新', // string | boolean
+    // lastUpdated: '最近更新', // string | boolean
   },
 }
