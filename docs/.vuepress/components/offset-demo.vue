@@ -31,7 +31,12 @@
 </script>
 
 <style lang="scss" scoped>
-  @import "../styles/helper";
+  $background: #409eff;
+$wrapper-top: 10px;
+$font-color: white;
+* {
+  box-sizing: border-box;
+}
   .offset-wrapper { padding-top: $wrapper-top;
     > .row {
       > .item { text-align: center; color: $font-color;

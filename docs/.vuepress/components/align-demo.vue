@@ -28,7 +28,12 @@
 </script>
 
 <style lang="scss" scoped>
-  @import "../styles/helper";
+ $background: #409eff;
+$wrapper-top: 10px;
+$font-color: white;
+* {
+  box-sizing: border-box;
+}
   .align-wrapper{ text-align: center; color: $font-color;
     .row{ padding-top: $wrapper-top;
       > .item { text-align: center;
