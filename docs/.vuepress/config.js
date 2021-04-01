@@ -31,6 +31,6 @@ module.exports = {
         ]
       }
     ],
-    // lastUpdated: '最近更新', // string | boolean
+    lastUpdated: '最近更新', // string | boolean
   },
 }

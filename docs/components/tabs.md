@@ -4,7 +4,7 @@
 
 ## 基础用法
 
-基础的、简洁的标签页。
+基础的、简洁的标签页
 <ClientOnly>
 <tabs-demo></tabs-demo>
 </ClientOnly>

@@ -1,8 +1,9 @@
 # Icon 图标
 
-提供了一套常用的图标集合。
+提供了一套常用的图标集合
 
 ## 基础用法
+直接使用图标组件
 <ClientOnly>
   <icon-demo></icon-demo>
 </ClientOnly>
@@ -14,6 +15,7 @@
 ```
 
 ## Button使用
+在按钮中使用
 <ClientOnly>
   <button-icon-demo></button-icon-demo>
 </ClientOnly>
@@ -31,7 +33,7 @@
     </c-row>
 ```
 
-### Props 属性
+### Icon 属性
 
 | 参数              | 说明             | 类型    | 可选值                   | 默认值  |
 | :------------    | :--------------- | :------ | :---------- | :------ |

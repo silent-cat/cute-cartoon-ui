@@ -3,7 +3,7 @@
 常见的布局容器
 
 ## 上中下
-
+最普通的布局
 <ClientOnly>
 <container-demo></container-demo>
 </ClientOnly>
@@ -17,7 +17,7 @@
 ```
 
 ## 内部侧边栏
-
+在内部显示侧边栏
 <ClientOnly>
 <container-inner-demo></container-inner-demo>
 </ClientOnly>
@@ -34,7 +34,7 @@
 ```
 
 ## 外部侧边栏
-
+在外部显示侧边栏
 <ClientOnly>
 <container-outer-demo></container-outer-demo>
 </ClientOnly>

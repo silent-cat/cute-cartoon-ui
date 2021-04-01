@@ -1,7 +1,8 @@
 # Grid 栅格
-栅格系统
+通过基础的 24 分栏，迅速简便地创建布局
 
 ## 基础用法
+通过 row 和 col 组件，并通过 col 组件的 span 属性自由组合布局
 <ClientOnly>
   <grid-demo></grid-demo>
 </ClientOnly>
@@ -43,7 +44,8 @@
     }
   </style>
 ```
-## gutter    
+## 分栏间隔    
+分栏之间存在间隔
 <ClientOnly>
   <gutter-demo></gutter-demo>
 </ClientOnly>
@@ -76,7 +78,8 @@
     }
   </style>
 ```
-## align
+## 排列方式
+定义每行的排列方式
 <ClientOnly>
   <align-demo></align-demo>
 </ClientOnly>
@@ -110,9 +113,8 @@
     }
   </style>
 ```
-## offset
-使用<span style='color:#3eaf7c;background-color:#F8F8F8'> offset </span>属性,可以将列向右侧偏。  
-例如，`offset="4"` 将元素向右侧偏移了 4 个列（column）的宽度。  
+## 分栏偏移
+支持偏移指定的栏数
 <ClientOnly>
     <offset-demo></offset-demo>
 </ClientOnly>
@@ -149,15 +151,16 @@
     }
   </style>
 ```
+### ROW 属性
+| 参数          | 说明             | 类型    | 可选值                                      | 默认值  |
+| :------------ | :--------------- | :------ | :------------------------------------------ | :------ |
+| gutter        | 栅格间隔     | number | -                                | 0   |
+| align      | 排列方式     | string |  left / center /right                               | left   |
 
-
-通过给 Row 设置<span style='color:#3eaf7c;background-color:#F8F8F8'> gutter </span>属性,让栅格有间隔。单位为<span style='color:#3eaf7c;background-color:#F8F8F8'> px </span>。
-
-通过给 Row 设置<span style='color:#3eaf7c;background-color:#F8F8F8'> align </span>属性, 可以定义其子组件在该节点里面的排版方式。 
-
-> Col 的选项有 span, offset 以及响应式相关的 ipad, narrowPc, pc, widePc 这些。
-
-栅格系统中的列是指 1 到 24 的值来表示其跨越的范围。通过设置<span style='color:#3eaf7c;background-color:#F8F8F8'> span </span>属性来实现。
-例如：三个等宽的列可以使用`<c-col span="8">列</c-col>` 来创建其中一个，其余两个再复制两份。
+### Column 属性
+| 参数          | 说明             | 类型    | 可选值                                      | 默认值  |
+| :------------ | :--------------- | :------ | :------------------------------------------ | :------ |
+| span        | 栅格占据的列数     | string / number | -                                | 0   |
+| offset      | 栅格左侧的间隔格数     | string /number |  -                              | 0   |
 
 

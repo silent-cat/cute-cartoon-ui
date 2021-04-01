@@ -1,5 +1,5 @@
 # Popover 弹出层
-
+在元素附近弹出提示框
 ## 基础用法
 <ClientOnly>
   <popover-demo></popover-demo>
@@ -26,7 +26,7 @@
   </c-popover>
 ```
 
-### Props 属性
+### Popover 属性
 | 参数              | 说明             | 类型    | 可选值                   | 默认值  |
 | :------------    | :--------------- | :------ | :---------- | :------ |
 | position        | 设置显示位置             | string  | top / bottom / left / right | top |

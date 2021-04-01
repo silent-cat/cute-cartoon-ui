@@ -1,8 +1,5 @@
 # Toast 提示
-
-分隔内容上有关联但属于不同类别的数据集合
-
-
+在整个屏幕范围显示
 ## 基础使用
 
 toast两秒后消失，可手动关闭
@@ -36,7 +33,7 @@ toast默认是自动关闭的，启动autoClose为true关闭自动关闭，只�
 ```
 
 ## 设置toast按钮的文本内容与回调
-closeButton 选项接收一个对象。对象包括 text 与 callback 属性。用于设定按钮的文本与回调。
+closeButton 选项接收一个对象，对象包括 text 与 callback 属性，用于设定按钮的文本与回调
 <ClientOnly>
 <toast-close-button-demo></toast-close-button-demo>
 </ClientOnly>
