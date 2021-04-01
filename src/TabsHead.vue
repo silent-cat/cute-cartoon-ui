@@ -10,7 +10,7 @@
 
 <script>
   export default {
-    name: 'InitTabsHead',
+    name: 'CubeTabsHead',
     inject: ['eventBus'],
     mounted() {
       this.eventBus.$on('update:selected', (itemName, vm) => {

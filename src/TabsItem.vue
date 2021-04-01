@@ -6,7 +6,7 @@
 
 <script>
   export default {
-    name: 'InitTabsItem',
+    name: 'CubeTabsItem',
     inject: ['eventBus'],
     props: {
       disabled: {

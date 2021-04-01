@@ -19,7 +19,6 @@
 
 <script>
 export default {
-  name: 'InitToast',
   props: {
     autoClose: {
       type: [Boolean, Number],
