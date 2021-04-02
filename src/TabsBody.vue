@@ -12,7 +12,7 @@
 
 <style lang="scss" scoped>
   .tabs-body-wrapper {
-    box-shadow:0px 1px 0px rgba(0,0,0,.2),inset 0px -1px 4px rgba(0,0,0,.2);
-    border-bottom: 4px solid #fff;
+    box-shadow:inset 0px -1px 4px rgba(0,0,0,.2);
+    /* border-bottom: 4px solid #fff; */
   }
 </style>

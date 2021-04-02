@@ -34,12 +34,12 @@
     justify-content: flex-start;
     position: relative;
     border-bottom: 4px solid #fff;
-    box-shadow: 0px 1px 0px rgba(0,0,0,.2),inset 0px -1px 4px rgba(0,0,0,.2),;
+    box-shadow: inset 0px -1px 4px rgba(0,0,0,.2),;
     
      
     > .line {
       position: absolute;
-      bottom: -5px;
+      bottom: -4px;
       border-bottom: 5px solid $active-color;
       transition: all 350ms;
     }

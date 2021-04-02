@@ -185,7 +185,7 @@ export default {
 .cube-pagination {
   > .cube-pagination-item {
     background-color: #f4f4f5;
-    color: #000;
+    color: #2c3e50;
     margin-left: 0.2rem;
     &:first-child {
       margin-left: 0;
