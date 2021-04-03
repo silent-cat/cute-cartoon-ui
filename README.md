@@ -21,6 +21,7 @@
     ```
    npm install cube-ui-pc
     ```
+    或
     ```
    yarn add cube-ui-pc
     ```
