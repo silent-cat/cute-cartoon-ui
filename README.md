@@ -27,8 +27,8 @@
     main.js
     ```js
     import {
-      Button,ButtonGroup,Switch,Collapse,CollapseItem,Icon,Row,Col,Pagination,Tabs,TabsHead,TabsBody,TabsItem,
-      TabsPanel,Toast,plugin,Popover,Input,Container,Header,Content,Footer,Aside
+      Button,ButtonGroup,Switch,Collapse,CollapseItem,Icon,Row,Col,Pagination,Tabs,TabsHead,TabsBody,
+      TabsItem,TabsPanel,Toast,plugin,Popover,Input,Container,Header,Content,Footer,Aside
     }  from "cube-ui-pc"; // 引入组件
     import "cube-ui-pc/dist/index.css"; // 引入样式
     // 注册组件
