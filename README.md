@@ -1,12 +1,12 @@
 <p align="center">
-  <a href="https://silent-cat.github.io/cube-ui-pc/" target="_blank" rel="noopener noreferrer">
+  <a href="https://silent-cat.github.io/cube-ui-pc/" target="_blank">
     <img width="100" src="https://z3.ax1x.com/2021/04/03/cnNHMT.png" alt="logo">
   </a>
 </p> 
 <h1 align="center">Cube UI</h1>
 <p align="center">
-  <a href="https://travis-ci.org/silent-cat/cube-ui-pc">
-    <img alt="Travis (.org)" src="https://travis-ci.org/silent-cat/cube-ui-pc.svg?branch=main">
+  <a href="https://travis-ci.org/silent-cat/cube-ui-pc" target="_blank">
+    <img alt="Travis (.org)" src="https://travis-ci.org/silent-cat/cube-ui-pc.svg?branch=main" target="_blank">
   </a>
 </p>
 
