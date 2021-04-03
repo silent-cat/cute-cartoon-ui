@@ -19,10 +19,10 @@
 ## 使用
 1. 安装 cube-ui-pc
     ```
-   npm install cube-ui-pc -S
+   npm install cube-ui-pc
     ```
     ```
-   yarn add cube-ui-pc -S
+   yarn add cube-ui-pc
     ```
 2. 引入 cube-ui-pc
 
